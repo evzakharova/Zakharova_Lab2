@@ -8,24 +8,24 @@
 # c) Слияние и объединение данных (соединить два DataFrames в определенном столбце)
 
 
-import pandas as pd
+# import pandas as pd
 
-df_email = pd.read_csv('email.csv')
-df_username = pd.read_csv('username.csv')
+# df_email = pd.read_csv('email.csv')
+# df_username = pd.read_csv('username.csv')
 
-# Группировка
+# # Группировка
 
-grouped_email = df_email.groupby('Trip count')['Total price'].mean()
-print(grouped_email)
+# grouped_email = df_email.groupby('Trip count')['Total price'].mean()
+# print(grouped_email)
 
-# Обработка отсутствующих данных
+# # Обработка отсутствующих данных
 
-df_email = df_email.fillna(value=0)
-# df_email = df_email.to_string()
-print(df_email)
+# df_email = df_email.fillna(value=0)
+# # df_email = df_email.to_string()
+# print(df_email)
 
-df_username = df_username.fillna(value=0)
-print(df_username)
+# df_username = df_username.fillna(value=0)
+# print(df_username)
 #
 # # Слияние и объединение данных
 #
